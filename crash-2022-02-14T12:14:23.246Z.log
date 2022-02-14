@@ -1,0 +1,16 @@
+PID 28527 received SIGSEGV for address: 0xb428
+0   segfault-handler.node               0x000000010cecd458 _ZL16segfault_handleriP9__siginfoPv + 272
+1   libsystem_platform.dylib            0x00000001bc2204e4 _sigtramp + 56
+2   node                                0x00000001005e5250 _ZN2v811HandleScope10InitializeEPNS_7IsolateE + 40
+3   node                                0x00000001005e531c _ZN2v811HandleScopeC1EPNS_7IsolateE + 20
+4   node.abi93.glibc.node               0x000000010e657b74 _ZN3Nan11AsyncWorker12WorkCompleteEv + 36
+5   node.abi93.glibc.node               0x000000010e657ee4 _ZN3Nan20AsyncExecuteCompleteEP9uv_work_si + 32
+6   node                                0x0000000100cff144 uv__work_done + 192
+7   node                                0x0000000100d028a4 uv__async_io + 320
+8   node                                0x0000000100d145b8 uv__io_poll + 1052
+9   node                                0x0000000100d02d34 uv_run + 380
+10  node                                0x000000010052ac48 _ZN4node6worker16WorkerThreadDataD2Ev + 204
+11  node                                0x00000001005279a8 _ZN4node6worker6Worker3RunEv + 684
+12  node                                0x000000010052acfc _ZZN4node6worker6Worker11StartThreadERKN2v820FunctionCallbackInfoINS2_5ValueEEEEN3$_38__invokeEPv + 56
+13  libsystem_pthread.dylib             0x00000001bc209240 _pthread_start + 148
+14  libsystem_pthread.dylib             0x00000001bc204024 thread_start + 8

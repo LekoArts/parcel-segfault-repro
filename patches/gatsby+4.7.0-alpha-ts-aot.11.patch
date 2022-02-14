@@ -1,0 +1,22 @@
+diff --git a/node_modules/gatsby/dist/services/initialize.js b/node_modules/gatsby/dist/services/initialize.js
+index 3cc7d67..f110ca6 100644
+--- a/node_modules/gatsby/dist/services/initialize.js
++++ b/node_modules/gatsby/dist/services/initialize.js
+@@ -5,6 +5,8 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
+ exports.__esModule = true;
+ exports.initialize = initialize;
+ 
++var SegfaultHandler = require("segfault-handler");
++
+ var _lodash = _interopRequireDefault(require("lodash"));
+ 
+ var _gatsbyCoreUtils = require("gatsby-core-utils");
+@@ -79,6 +81,8 @@ process.on(`unhandledRejection`, reason => {
+ // Otherwise leave commented out.
+ // require(`../bootstrap/log-line-function`)
+ 
++SegfaultHandler.registerHandler(`crash-${new Date().toISOString()}.log`)
++
+ async function initialize({
+   program: args,
+   parentSpan
