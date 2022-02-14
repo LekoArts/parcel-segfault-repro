@@ -4878,7 +4878,7 @@ gatsby-page-utils@2.8.0-next.0, gatsby-page-utils@^2.8.0-next.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-parcel-config@0.0.1-alpha-ts-aot.19817+be7919a756:
+gatsby-parcel-config@0.0.1-alpha-ts-aot.19817+be7919a756, gatsby-parcel-config@^0.0.1-alpha-ts-aot.19817:
   version "0.0.1-alpha-ts-aot.19817"
   resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.0.1-alpha-ts-aot.19817.tgz#d4474fa094e4a4e960ece9c99306a972fe1e0501"
   integrity sha512-/ZGjl7RAEIeNvlBcvH/PF+6HoT3DJtaXtv6rAvQV8sUVbQqm/wHTPd42bVjyLVg9YBiT9b5G1kJ6sqIHpmI7Ow==
