@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "build": "npm run clean && node compile-gatsby-files.mjs",
+    "build": "node compile-gatsby-files.mjs",
     "clean": "rm -rf .cache",
     "postinstall": "patch-package"
   },

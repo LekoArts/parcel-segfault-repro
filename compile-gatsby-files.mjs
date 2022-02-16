@@ -7,12 +7,12 @@ SegfaultHandler.registerHandler(`crash-${new Date().toISOString()}.log`)
 
 function constructBundler(dir) {
   return new Parcel({
-    entries: `${dir}/gatsby-+(node|config).{ts,tsx,js}`,
+    entries: [`${dir}/gatsby-+(node|config).{ts,tsx,js}`, `${dir}/plugins/gatsby-local-plugin/gatsby-+(node|config).{ts,tsx,js}`],
     defaultConfig: `gatsby-parcel-config`,
-    mode: `production`,
+    // mode: `production`,
     logLevel: `verbose`, // Added for this repro
     targets: {
-      default: {
+      root: {
         distDir: `${dir}/${COMPILED_CACHE_DIR}`,
         outputFormat: `commonjs`,
         includeNodeModules: false,
